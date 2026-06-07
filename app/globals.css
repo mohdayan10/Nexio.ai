@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #14171f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-[1200px] px-5 sm:px-8;
+  }
+
+  /* kore-style mono button labels */
+  .btn-k {
+    @apply inline-flex items-center gap-2 rounded-md bg-[#14171f] px-4 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-white transition-all hover:bg-black active:scale-[0.98];
+  }
+  .btn-ko {
+    @apply inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-800 transition-all hover:border-slate-400 hover:bg-slate-50 active:scale-[0.98];
+  }
+  .dot {
+    @apply h-1 w-1 rounded-full bg-current;
+  }
+
+  /* pill tabs */
+  .tab {
+    @apply rounded-full border px-4 py-2 font-mono text-[11px] font-semibold uppercase tracking-[0.1em] transition-all;
+  }
+  .tab-on {
+    @apply border-[#14171f] bg-[#14171f] text-white;
+  }
+  .tab-off {
+    @apply border-slate-300 bg-white text-slate-500 hover:border-slate-400 hover:text-slate-800;
+  }
+
+  .label-mono {
+    @apply font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500;
+  }
+
+  .card-k {
+    @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm;
+  }
+
+  .display {
+    @apply font-sans font-semibold tracking-tight;
+  }
+}
+
+/* Concentric ripple hero background */
+.ripple {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 38%),
+    repeating-radial-gradient(
+      circle at 50% 30%,
+      #eaf2fd 0px,
+      #eaf2fd 46px,
+      #f3f8ff 46px,
+      #f3f8ff 96px
+    );
+}
+
+/* soft top-down light blue wash for sections */
+.wash {
+  background: linear-gradient(180deg, #eef4fc 0%, #f6f9fe 40%, #ffffff 100%);
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+::selection {
+  background: #cfe0fb;
+  color: #0b2a5b;
+}
