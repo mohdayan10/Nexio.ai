@@ -15,7 +15,7 @@ export default function Contact() {
                   customer and employee experiences.
                 </p>
               </div>
-              <a href="#cta" className="btn-ko mt-8 w-fit border-white/20 bg-white/10 text-white hover:bg-white/20 px-5 py-3">
+              <a href="/contact" className="btn-ko mt-8 w-fit border-white/20 bg-white/10 text-white hover:bg-white/20 px-5 py-3">
                 Get a demo <span className="dot" />
               </a>
             </div>
@@ -32,7 +32,7 @@ export default function Contact() {
                   deploy, and govern agents with certainty.
                 </p>
               </div>
-              <a href="#cta" className="btn-k mt-8 w-fit px-5 py-3">
+              <a href="/contact" className="btn-k mt-8 w-fit px-5 py-3">
                 Get in touch <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>

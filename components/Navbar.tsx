@@ -44,10 +44,10 @@ export default function Navbar() {
           </div>
 
           <div className="hidden items-center gap-4 lg:flex">
-            <a href="#cta" className="text-[15px] font-medium text-slate-800 hover:text-black">
+            <a href="/contact" className="text-[15px] font-medium text-slate-800 hover:text-black">
               Sign in
             </a>
-            <a href="#cta" className="btn-k">
+            <a href="/contact" className="btn-k">
               Get in touch
             </a>
           </div>
@@ -73,7 +73,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="#cta" onClick={() => setOpen(false)} className="btn-k mt-2 w-full justify-center">
+            <a href="/contact" onClick={() => setOpen(false)} className="btn-k mt-2 w-full justify-center">
               Get in touch
             </a>
           </div>

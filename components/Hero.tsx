@@ -29,7 +29,7 @@ export default function Hero() {
             className="mt-8 flex animate-fade-up items-center justify-center gap-3"
             style={{ animationDelay: "120ms" }}
           >
-            <a href="#cta" className="btn-k px-5 py-3">
+            <a href="/contact" className="btn-k px-5 py-3">
               Get a demo <span className="dot" />
             </a>
             <a href="#gartner" className="btn-ko px-5 py-3">

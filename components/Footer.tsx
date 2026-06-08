@@ -59,7 +59,7 @@ export default function Footer() {
             <MessageSquare className="h-6 w-6 text-slate-700" />
             <h4 className="mt-4 text-2xl font-semibold text-[#14171f]">Let&apos;s work together</h4>
             <p className="mt-2 text-sm text-slate-500">Get answers and a customized quote for your projects</p>
-            <a href="#cta" className="btn-ko mt-5 px-4 py-2.5">Submit RFP <span className="dot" /></a>
+            <a href="/contact" className="btn-ko mt-5 px-4 py-2.5">Submit RFP <span className="dot" /></a>
             <p className="mt-8 font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-500">Follow us on</p>
             <div className="mt-3 flex gap-2">
               {[Linkedin, Youtube, MessageSquare].map((Icon, i) => (

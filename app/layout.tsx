@@ -15,6 +15,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nexio.ai"),
   title: "Nexio — Self-Learning AI Agents for Enterprise Operations",
   description:
     "Nexio turns your SOPs into self-learning AI agents that run your operations end to end. Trusted by Fortune 500 companies and scale-ups processing 10m+ tasks.",
@@ -29,7 +30,15 @@ export const metadata: Metadata = {
     title: "Nexio — The AI agents agency",
     description:
       "Tailored AI agents that automate your hardest workflows, end to end.",
+    url: "/",
+    siteName: "Nexio",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexio — The AI agents agency",
+    description:
+      "Tailored AI agents that automate your hardest workflows, end to end.",
   },
 };
 
