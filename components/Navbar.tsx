@@ -7,7 +7,7 @@ const nav = [
   { label: "Agent Platform { Artemis }", caret: true, href: "#apps" },
   { label: "Agentic AI Apps", caret: true, href: "#apps" },
   { label: "Agent Marketplace", caret: false, href: "#cards" },
-  { label: "More", caret: true, href: "#insights" },
+  { label: "More", caret: true, href: "#cta" },
 ];
 
 export function Wordmark() {
