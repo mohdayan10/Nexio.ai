@@ -7,16 +7,16 @@ const nav = [
   { label: "Agent Platform { Artemis }", caret: true, href: "#apps" },
   { label: "Agentic AI Apps", caret: true, href: "#apps" },
   { label: "Agent Marketplace", caret: false, href: "#cards" },
-  { label: "More", caret: true, href: "#insights" },
+  { label: "More", caret: true, href: "#cta" },
 ];
 
 export function Wordmark() {
   return (
-    <a href="#top" className="flex items-center gap-0.5 text-2xl font-bold tracking-tight text-[#14171f]">
-      <span>nexio</span>
-      <span className="ml-1 rounded-[6px] bg-[#14171f] px-1.5 py-0.5 text-base leading-none text-white">
-        .ai
-      </span>
+    <a
+      href="#top"
+      className="font-serif text-2xl font-semibold italic tracking-tight text-[#14171f]"
+    >
+      nexio
     </a>
   );
 }
