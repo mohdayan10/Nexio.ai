@@ -37,8 +37,8 @@ export default function Footer() {
         {/* top row */}
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-6">
-            <span className="flex items-center gap-0.5 text-2xl font-bold tracking-tight text-[#14171f]">
-              nexio<span className="ml-1 rounded-[6px] bg-[#14171f] px-1.5 py-0.5 text-base leading-none text-white">.ai</span>
+            <span className="font-serif text-2xl font-semibold italic tracking-tight text-[#14171f]">
+              nexio
             </span>
             <span className="text-slate-500">Agentic AI applications for the enterprise</span>
           </div>

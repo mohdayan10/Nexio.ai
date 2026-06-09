@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { ChevronDown } from "lucide-react";
 
 function PlatformGlow() {
@@ -28,20 +29,42 @@ export default function Hero() {
       <div className="container-px">
         {/* hero copy */}
         <div className="mx-auto max-w-4xl pb-6 text-center">
-          <h1 className="display animate-fade-up text-[2.6rem] leading-[1.05] text-[#14171f] sm:text-6xl md:text-[4.5rem]">
-            Great experiences are built
-            <br className="hidden sm:block" /> on a strong foundation.
+          <h1 className="font-serif font-medium italic tracking-tight text-[2.6rem] leading-[1.08] text-[#14171f] sm:text-6xl md:text-[4.5rem]">
+            <span className="block">
+              {["Great", "experiences", "are", "built"].map((word, i) => (
+                <Fragment key={word}>
+                  <span
+                    className="hero-word"
+                    style={{ animationDelay: `${120 + i * 140}ms` }}
+                  >
+                    {word}
+                  </span>{" "}
+                </Fragment>
+              ))}
+            </span>
+            <span className="block">
+              {["on", "a", "strong", "foundation."].map((word, i) => (
+                <Fragment key={word}>
+                  <span
+                    className="hero-word"
+                    style={{ animationDelay: `${120 + (4 + i) * 140}ms` }}
+                  >
+                    {word}
+                  </span>{" "}
+                </Fragment>
+              ))}
+            </span>
           </h1>
           <p
             className="mx-auto mt-6 max-w-xl animate-fade-up text-lg text-slate-500 md:text-xl"
-            style={{ animationDelay: "60ms" }}
+            style={{ animationDelay: "1500ms", animationFillMode: "both" }}
           >
             AI agents ready for customers and employees.
             <br className="hidden sm:block" /> The only agent platform you can trust.
           </p>
           <div
             className="mt-8 flex animate-fade-up items-center justify-center gap-3"
-            style={{ animationDelay: "120ms" }}
+            style={{ animationDelay: "1680ms", animationFillMode: "both" }}
           >
             <a href="/contact" className="btn-k px-5 py-3">
               Get a demo <span className="dot" />
